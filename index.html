@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>EB BILL GENERATOR</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <div id="container">
         <h2>EB Bill Generator</h2>
-        <form id="eb_bill" name="ebBill" action="#" onsubmit="frmSubmit(this)">
+        <form id="eb_bill" name="ebBill" action="Electricity Bill.html" method="post" onsubmit="frmSubmit(this)">
             <ul>
                 <li>
                     <label for="customer_name">Customer Name  </label>:
@@ -24,40 +25,49 @@
                     <input type="number" name="new_units" id="new_units" placeholder="new_units">
                 </li>
                 <li>
-                    <label for="tariff">Tariff Types  </label>:
+                    <label id="supplyType">Supply Type</label><span id="SupplyType_colon">:</span>
+                    <input type="radio" name="supply_type" id="supply_type_1" value="I-High Tension supply" class="supplytype">
+                    <label for="supply_type_1" class="lbl-supply-type">I - High Tension supply</label>
+                    <input type="radio" name="supply_type" id="supply_type_2" value="II-Low Tension supply" class="supplytype">
+                    <label for="supply_type_2" class="lbl-supply-type">II - Low Tension supply</label>
+
+                </li>
+                <li>
+                    <label for="tariff" class="tariffTypes">Tariff Types  </label><span id="Tariff_Types_colon">:</span>
                     <select id="tariff" name="tariff">
                         <option value="I-A">I-A</option>
                         <option value="I-B">I-B</option>
                         <option value="I-C">I-C</option>
                         <option value="II-A">II-A</option>
+                        <option value="II-B">II-B</option>
                         <option value="II-B1">II-B1</option>
                         <option value="II-B2">II-B2</option>
+                        <option value="II-C">II-C</option>
+                        <option value="III">III</option>
                         <option value="III-A1">III-A1</option>
                         <option value="III-A2">III-A2</option>
                         <option value="III-B">III-B</option>
-                        <option value="IV-">IV</option>
+                        <option value="IV">IV</option>
                         <option value="V">V</option>
                         <option value="VI">VI</option>
                     </select>
                 </li>
+
                 <li>
-                    <label>Supply Type</label>:
-                    <input type="radio" name="supply_type" id="supply_type_1" class="supply-type" >
-                    <label for="supply_type_1" class="lbl-supply-type">I - High Tension supply</label>
-                    <input type="radio" name="supply_type"  id="supply_type_2" class="supply-type">
-                    <label for="supply_type_2" class="lbl-supply-type">II - Low Tension supply</label>
-                    
-                </li>
-                <li>
-                   
+
                     <input type="submit" value="submit" id="btn_submit">
                 </li>
 
             </ul>
         </form>
     </div>
-    <script src="tariffRates.js"></script>
+
+
     <script src="ebBill.js"></script>
+
+
+
+
 </body>
 
 </html>

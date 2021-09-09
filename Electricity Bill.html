@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Electricity Bill
+    </title>
+    <link rel="stylesheet" href="Electricity_bill.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>EB Bill </h1>
+        <ul>
+            <li>Name <span class="colon">:</span>
+                <span id="CustomerName"></span>
+            </li>
+            <li>Consumed Units <span class="colon2">:</span>
+                <span id="CurrentUnits"></span>
+            </li>
+            <li>Supply Type <span class="colon3">:</span>
+                <span id="Supply_Types"></span>
+            </li>
+            <li>Tariff Type <span class="colon4">:</span>
+                <span id="Tariff_types"></span>
+            </li>
+            <li>Payment Cost <span class="colon5">:</span>
+                <span id="Payment_cost"></span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("CustomerName").innerHTML = localStorage.getItem("CustomerName");
+        document.getElementById("CurrentUnits").innerHTML = localStorage.getItem("ConsumedUnits");
+        document.getElementById("Supply_Types").innerHTML = localStorage.getItem("SuppliedType");
+        document.getElementById("Tariff_types").innerHTML = localStorage.getItem("TariffType");
+        document.getElementById("Payment_cost").innerHTML = localStorage.getItem("PaymentCost");
+    </script>
+
+
+</body>
+
+</html>

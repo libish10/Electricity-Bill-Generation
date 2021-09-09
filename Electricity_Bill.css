@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    height: 420px;
+    width: 600px;
+    background-color: rgba(140, 232, 255, 0.575);
+    /* border: 3px outset blue; */
+    margin: 50px auto;
+    box-shadow: 2px 5px 10px lightblue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    position: relative;
+    top: 20px;
+    margin: 50px auto;
+    text-align: center;
+    color: darkblue
+}
+
+ul li {
+    line-height: 55px;
+    font-size: 23px;
+    color: blue;
+}
+
+.colon {
+    position: relative;
+    left: 150px;
+}
+
+.colon2 {
+    position: relative;
+    left: 53px;
+}
+
+.colon3 {
+    position: relative;
+    left: 90px;
+}
+
+.colon4 {
+    position: relative;
+    left: 105px;
+}
+
+.colon5 {
+    position: relative;
+    left: 80px;
+}
+
+#CustomerName {
+    position: relative;
+    left: 170px;
+    color: red;
+}
+
+#CurrentUnits {
+    position: relative;
+    left: 70px;
+    color: red;
+}
+
+#Supply_Types {
+    position: relative;
+    left: 105px;
+    color: red;
+}
+
+#Tariff_types {
+    position: relative;
+    left: 120px;
+    color: red;
+}
+
+#Payment_cost {
+    position: relative;
+    left: 95px;
+    color: red;
+}
