@@ -1,1 +1,1 @@
-# eb-bill-gneration
+# eb-bill-generation
